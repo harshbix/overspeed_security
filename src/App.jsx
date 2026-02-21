@@ -19,10 +19,10 @@ function App() {
       '/assets/vendor/isotope-layout/isotope.pkgd.min.js',
       '/assets/vendor/swiper/swiper-bundle.min.js',
       '/assets/vendor/waypoints/noframework.waypoints.js',
-      '/assets/js/main.js'
     ];
 
     const loadScripts = async () => {
+      // Load vendor scripts first
       for (const src of scripts) {
         await new Promise((resolve) => {
           const script = document.createElement('script');
@@ -33,11 +33,33 @@ function App() {
           document.body.appendChild(script);
         });
       }
+
+      // Initialize AOS after vendor loads but before main.js
+      if (window.AOS) {
+        window.AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false
+        });
+        setTimeout(() => window.AOS.refresh(), 500);
+      }
+
+      // Finally load main.js which binds the remaining events
+      const mainScript = document.createElement('script');
+      mainScript.src = '/assets/js/main.js';
+      mainScript.async = false;
+      document.body.appendChild(mainScript);
+      scripts.push('/assets/js/main.js'); // Add to array for later cleanup
     };
 
-    loadScripts();
+    // Small delay ensures React completes initial DOM painting
+    const timer = setTimeout(() => {
+      loadScripts();
+    }, 100);
 
     return () => {
+      clearTimeout(timer);
       // Cleanup scripts if needed
       scripts.forEach(src => {
         const script = document.querySelector(`script[src="${src}"]`);
