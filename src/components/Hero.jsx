@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import heroImg from '../../public/assets/img/hero-img.png';
 
 const Hero = () => {
     const revealRef = useScrollReveal();
@@ -22,7 +23,7 @@ const Hero = () => {
                         className="col-lg-6 order-1 order-lg-2 hero-img"
                     >
                         <div style={{ aspectRatio: '1 / 1', width: '100%', maxWidth: '600px', margin: '0 auto' }}>
-                            <img src="/assets/img/hero-img.png" className="img-fluid animated" alt="Hero Illustration" fetchpriority="high" />
+                            <img src={heroImg} className="img-fluid animated" alt="Hero Illustration" fetchpriority="high" />
                         </div>
                     </div>
                 </div>
