@@ -13,7 +13,7 @@ const Clients = () => {
                             className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                         >
                             <img
-                                src={`/assets/img/clients/client-${num}.png`}
+                                src={`/assets/img/clients/client-${num}.webp`}
                                 className="img-fluid"
                                 alt={`Client ${num}`}
                             />

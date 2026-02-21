@@ -1,6 +1,6 @@
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import heroImg from '/assets/img/hero-img.png';
+import heroImg from '/assets/img/hero-img.webp';
 
 const Hero = () => {
     const revealRef = useScrollReveal();
