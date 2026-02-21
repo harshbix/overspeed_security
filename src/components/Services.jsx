@@ -19,7 +19,7 @@ const Services = () => {
                     >
                         <div className="icon-box">
                             <div className="icon"><i className="bx bxs-dog"></i></div>
-                            <h4><a href="">Dog Security</a></h4>
+                            <h4><a href="#contact" className="scrollto">Dog Security</a></h4>
                             <p>
                                 Highly trained security dogs serving as formidable deterrents and
                                 reliable protectors against intruders for your home or business.
@@ -32,7 +32,7 @@ const Services = () => {
                     >
                         <div className="icon-box">
                             <div className="icon"><i className="bx bxs-car-crash"></i></div>
-                            <h4><a href="">Car Patrols</a></h4>
+                            <h4><a href="#contact" className="scrollto">Car Patrols</a></h4>
                             <p>
                                 Mobile security patrols equipped to monitor and safeguard
                                 areas, ensuring a secure environment.
@@ -45,7 +45,7 @@ const Services = () => {
                     >
                         <div className="icon-box">
                             <div className="icon"><i className="bx bxs-cctv"></i></div>
-                            <h4><a href="">Watchmen & CCTV</a></h4>
+                            <h4><a href="#contact" className="scrollto">Watchmen & CCTV</a></h4>
                             <p>
                                 Professional security personnel combined with state-of-the-art camera
                                 systems for round-the-clock surveillance and immediate response.
@@ -58,7 +58,7 @@ const Services = () => {
                     >
                         <div className="icon-box">
                             <div className="icon"><i className="bx bxs-group"></i></div>
-                            <h4><a href="">Personal Body Guards</a></h4>
+                            <h4><a href="#contact" className="scrollto">Personal Body Guards</a></h4>
                             <p>
                                 Experienced, highly-trained close protection officers dedicated to
                                 ensuring your personal safety and peace of mind, 24/7.

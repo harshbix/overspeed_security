@@ -25,7 +25,7 @@ const Pricing = () => {
                                 <li className="na"><i className="bx bx-x"></i><span>Armed Response Support</span></li>
                                 <li className="na"><i className="bx bx-x"></i><span>K-9 Unit Support</span></li>
                             </ul>
-                            <a href="#" className="buy-btn">Get Started</a>
+                            <a href="#contact" className="buy-btn scrollto">Get Started</a>
                         </div>
                     </div>
 
@@ -40,7 +40,7 @@ const Pricing = () => {
                                 <li><i className="bx bx-check"></i> Incident Reporting</li>
                                 <li><i className="bx bx-check"></i> Immediate Threat Deterrence</li>
                             </ul>
-                            <a href="#" className="buy-btn">Get Started</a>
+                            <a href="#contact" className="buy-btn scrollto">Get Started</a>
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@ const Pricing = () => {
                                 <li><i className="bx bx-check"></i> Rapid Incident Response</li>
                                 <li><i className="bx bx-check"></i> High-Value Asset Protection</li>
                             </ul>
-                            <a href="#" className="buy-btn">Get Started</a>
+                            <a href="#contact" className="buy-btn scrollto">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Pricing = () => {
                                 <li className="na"><i className="bx bx-x"></i><span>Handset Integration</span></li>
                                 <li className="na"><i className="bx bx-x"></i><span>Mobile Vehicle Uplink</span></li>
                             </ul>
-                            <a href="#" className="buy-btn">Get Started</a>
+                            <a href="#contact" className="buy-btn scrollto">Get Started</a>
                         </div>
                     </div>
 
@@ -87,7 +87,7 @@ const Pricing = () => {
                                 <li><i className="bx bx-check"></i> Direct Base Link</li>
                                 <li><i className="bx bx-check"></i> Weatherproof Design</li>
                             </ul>
-                            <a href="#" className="buy-btn">Get Started</a>
+                            <a href="#contact" className="buy-btn scrollto">Get Started</a>
                         </div>
                     </div>
 
@@ -102,7 +102,7 @@ const Pricing = () => {
                                 <li><i className="bx bx-check"></i> 24/7 Dispatch Integration</li>
                                 <li><i className="bx bx-check"></i> Multi-Site Coverage</li>
                             </ul>
-                            <a href="#" className="buy-btn">Get Started</a>
+                            <a href="#contact" className="buy-btn scrollto">Get Started</a>
                         </div>
                     </div>
                 </div>

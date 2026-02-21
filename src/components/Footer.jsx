@@ -20,21 +20,21 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Useful Links</h4>
                             <ul>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#hero" className="scrollto">Home</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#about" className="scrollto">About us</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#services" className="scrollto">Services</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#!">Terms of service</a></li>
                             </ul>
                         </div>
 
                         <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Our Services</h4>
                             <ul>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Dog Security</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">CCTV camera installation</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Personal body guard</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Car Patrol</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Security Watchmen</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#services" className="scrollto">Dog Security</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#services" className="scrollto">CCTV camera installation</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#services" className="scrollto">Personal body guard</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#services" className="scrollto">Car Patrol</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#services" className="scrollto">Security Watchmen</a></li>
                             </ul>
                         </div>
 
@@ -44,11 +44,11 @@ const Footer = () => {
                                 Connect with us across our social media platforms to stay updated on our latest security insights and company news.
                             </p>
                             <div className="social-links mt-3">
-                                <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-                                <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-                                <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                                <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-                                <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                                <a href="https://twitter.com/overspeedsecurity" className="twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i className="bx bxl-twitter"></i></a>
+                                <a href="https://facebook.com/overspeedsecurity" className="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="bx bxl-facebook"></i></a>
+                                <a href="https://instagram.com/overspeedsecurity" className="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="bx bxl-instagram"></i></a>
+                                <a href="https://skype.com/overspeedsecurity" className="google-plus" target="_blank" rel="noopener noreferrer" aria-label="Skype"><i className="bx bxl-skype"></i></a>
+                                <a href="https://linkedin.com/company/overspeedsecurity" className="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                     &copy; Copyright <strong><span>Overspeed</span></strong>. All Rights Reserved
                 </div>
                 <div className="credits">
-                    Designed by <a href="http://github.com/harshbix"><strong>JuniorJeconia</strong></a>
+                    Designed by <a href="https://jeconiajunior.vercel.app" target="_blank" rel="noopener noreferrer"><strong>JuniorJeconia</strong></a>
                 </div>
             </div>
         </footer>

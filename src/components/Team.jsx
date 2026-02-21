@@ -31,10 +31,10 @@ const Team = () => {
                                     Overseeing all field operations with precision, ensuring our security deployments are flawless and effective.
                                 </p>
                                 <div className="social">
-                                    <a href=""><i className="ri-twitter-fill"></i></a>
-                                    <a href=""><i className="ri-facebook-fill"></i></a>
-                                    <a href=""><i className="ri-instagram-fill"></i></a>
-                                    <a href=""> <i className="ri-linkedin-box-fill"></i> </a>
+                                    <a href="https://twitter.com/eliassarumbo" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i className="ri-twitter-fill"></i></a>
+                                    <a href="https://facebook.com/eliassarumbo" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="ri-facebook-fill"></i></a>
+                                    <a href="https://instagram.com/eliassarumbo" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="ri-instagram-fill"></i></a>
+                                    <a href="https://linkedin.com/in/eliassarumbo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i className="ri-linkedin-box-fill"></i> </a>
                                 </div>
                             </div>
                         </div>
@@ -58,10 +58,10 @@ const Team = () => {
                                     Managing the company's financial health, guaranteeing transparency and efficiency in all our fiscal operations.
                                 </p>
                                 <div className="social">
-                                    <a href=""><i className="ri-twitter-fill"></i></a>
-                                    <a href=""><i className="ri-facebook-fill"></i></a>
-                                    <a href=""><i className="ri-instagram-fill"></i></a>
-                                    <a href=""> <i className="ri-linkedin-box-fill"></i> </a>
+                                    <a href="https://twitter.com/madamtegemea" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i className="ri-twitter-fill"></i></a>
+                                    <a href="https://facebook.com/madamtegemea" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="ri-facebook-fill"></i></a>
+                                    <a href="https://instagram.com/madamtegemea" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="ri-instagram-fill"></i></a>
+                                    <a href="https://linkedin.com/in/madamtegemea" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i className="ri-linkedin-box-fill"></i> </a>
                                 </div>
                             </div>
                         </div>
@@ -83,10 +83,10 @@ const Team = () => {
                                     Dedicated to recruiting and retaining elite talent while fostering a culture of excellence and continuous improvement.
                                 </p>
                                 <div className="social">
-                                    <a href=""><i className="ri-twitter-fill"></i></a>
-                                    <a href=""><i className="ri-facebook-fill"></i></a>
-                                    <a href=""><i className="ri-instagram-fill"></i></a>
-                                    <a href=""> <i className="ri-linkedin-box-fill"></i> </a>
+                                    <a href="https://twitter.com/nkwamasadiq" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i className="ri-twitter-fill"></i></a>
+                                    <a href="https://facebook.com/nkwamasadiq" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="ri-facebook-fill"></i></a>
+                                    <a href="https://instagram.com/nkwamasadiq" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="ri-instagram-fill"></i></a>
+                                    <a href="https://linkedin.com/in/nkwamasadiq" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i className="ri-linkedin-box-fill"></i> </a>
                                 </div>
                             </div>
                         </div>
@@ -108,10 +108,10 @@ const Team = () => {
                                     Supporting strategic financial planning and ensuring seamless resource allocation for all security mandates.
                                 </p>
                                 <div className="social">
-                                    <a href=""><i className="ri-twitter-fill"></i></a>
-                                    <a href=""><i className="ri-facebook-fill"></i></a>
-                                    <a href=""><i className="ri-instagram-fill"></i></a>
-                                    <a href=""> <i className="ri-linkedin-box-fill"></i> </a>
+                                    <a href="https://twitter.com/witnesszabron" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i className="ri-twitter-fill"></i></a>
+                                    <a href="https://facebook.com/witnesszabron" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="ri-facebook-fill"></i></a>
+                                    <a href="https://instagram.com/witnesszabron" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="ri-instagram-fill"></i></a>
+                                    <a href="https://linkedin.com/in/witnesszabron" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <i className="ri-linkedin-box-fill"></i> </a>
                                 </div>
                             </div>
                         </div>
