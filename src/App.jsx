@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useScrollReveal } from './hooks/useScrollReveal';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Clients from './components/Clients';
@@ -13,7 +14,6 @@ function App() {
   useEffect(() => {
     // Inject scripts that need to run after components mount
     const scripts = [
-      '/assets/vendor/aos/aos.js',
       '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js',
       '/assets/vendor/glightbox/js/glightbox.min.js',
       '/assets/vendor/isotope-layout/isotope.pkgd.min.js',
@@ -32,17 +32,6 @@ function App() {
           script.onerror = resolve; // Continue even if one fails
           document.body.appendChild(script);
         });
-      }
-
-      // Initialize AOS after vendor loads but before main.js
-      if (window.AOS) {
-        window.AOS.init({
-          duration: 1000,
-          easing: "ease-in-out",
-          once: true,
-          mirror: false
-        });
-        setTimeout(() => window.AOS.refresh(), 500);
       }
 
       // Finally load main.js which binds the remaining events
@@ -68,6 +57,8 @@ function App() {
     }
   }, []);
 
+  const ctaReveal = useScrollReveal();
+
   return (
     <>
       <Header />
@@ -78,7 +69,7 @@ function App() {
         <Services />
         {/* Call To Action Section - Inline as it's small */}
         <section id="cta" className="cta">
-          <div className="container" data-aos="zoom-in">
+          <div className="container" ref={ctaReveal}>
             <div className="row">
               <div className="col-lg-9 text-center text-lg-start">
                 <h3>Contact Us Today</h3>

@@ -1,10 +1,12 @@
 import React from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Team = () => {
+    const revealRef = useScrollReveal();
     return (
         <section id="team" className="team section-bg">
-            <div className="container" data-aos="fade-up">
-                <div className="section-title">
+            <div className="container" ref={revealRef}>
+                <div className="section-title reveal-item">
                     <h2>Team</h2>
                     <p>
                         Discover the passion and expertise that drive our team at
@@ -12,8 +14,8 @@ const Team = () => {
                     </p>
                 </div>
 
-                <div className="row">
-                    <div className="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div className="row reveal-container">
+                    <div className="col-lg-6">
                         <div className="member d-flex align-items-start">
                             <div className="pic">
                                 <img
@@ -26,7 +28,7 @@ const Team = () => {
                                 <h4>Elias Sarumbo</h4>
                                 <span>Chief Operation Manager</span>
                                 <p>
-                                    Explicabo voluptatem mollitia et repellat qui dolorum quasi
+                                    Overseeing all field operations with precision, ensuring our security deployments are flawless and effective.
                                 </p>
                                 <div className="social">
                                     <a href=""><i className="ri-twitter-fill"></i></a>
@@ -40,8 +42,6 @@ const Team = () => {
 
                     <div
                         className="col-lg-6 mt-4 mt-lg-0"
-                        data-aos="zoom-in"
-                        data-aos-delay="200"
                     >
                         <div className="member d-flex align-items-start">
                             <div className="pic">
@@ -55,8 +55,7 @@ const Team = () => {
                                 <h4>Madam Tegemea</h4>
                                 <span>Accountant</span>
                                 <p>
-                                    Aut maiores voluptates amet et quis praesentium qui senda
-                                    para
+                                    Managing the company's financial health, guaranteeing transparency and efficiency in all our fiscal operations.
                                 </p>
                                 <div className="social">
                                     <a href=""><i className="ri-twitter-fill"></i></a>
@@ -68,7 +67,7 @@ const Team = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div className="col-lg-6 mt-4">
                         <div className="member d-flex align-items-start">
                             <div className="pic">
                                 <img
@@ -81,7 +80,7 @@ const Team = () => {
                                 <h4>Nkwama Sadiq</h4>
                                 <span>Human Resource Manager</span>
                                 <p>
-                                    Quisquam facilis cum velit laborum corrupti fuga rerum quia
+                                    Dedicated to recruiting and retaining elite talent while fostering a culture of excellence and continuous improvement.
                                 </p>
                                 <div className="social">
                                     <a href=""><i className="ri-twitter-fill"></i></a>
@@ -93,7 +92,7 @@ const Team = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div className="col-lg-6 mt-4">
                         <div className="member d-flex align-items-start">
                             <div className="pic">
                                 <img
@@ -106,7 +105,7 @@ const Team = () => {
                                 <h4>Witness Zabron</h4>
                                 <span>Assistant Finance Manager</span>
                                 <p>
-                                    Dolorum tempora officiis odit laborum officiis et et accusamus
+                                    Supporting strategic financial planning and ensuring seamless resource allocation for all security mandates.
                                 </p>
                                 <div className="social">
                                     <a href=""><i className="ri-twitter-fill"></i></a>

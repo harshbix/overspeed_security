@@ -5,15 +5,18 @@ const Header = () => {
     // Mobile nav toggle logic
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const navbar = document.querySelector('#navbar');
-    
+
     if (mobileNavToggle && navbar) {
       const toggleNav = (e) => {
         navbar.classList.toggle('navbar-mobile');
-        e.currentTarget.classList.toggle('bi-list');
-        e.currentTarget.classList.toggle('bi-x');
+        const icon = mobileNavToggle.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('bi-list');
+          icon.classList.toggle('bi-x');
+        }
       };
       mobileNavToggle.addEventListener('click', toggleNav);
-      
+
       return () => {
         mobileNavToggle.removeEventListener('click', toggleNav);
       };
@@ -35,7 +38,9 @@ const Header = () => {
               <a className="getstarted scrollto" href="#about">Get Started</a>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          <button className="mobile-nav-toggle" aria-label="Toggle Navigation" style={{ background: 'none', border: 'none', padding: '0.5rem' }}>
+            <i className="bi bi-list"></i>
+          </button>
         </nav>
       </div>
     </header>

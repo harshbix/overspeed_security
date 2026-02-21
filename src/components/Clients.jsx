@@ -1,10 +1,12 @@
 import React from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Clients = () => {
+    const revealRef = useScrollReveal();
     return (
         <section id="clients" className="clients section-bg">
             <div className="container">
-                <div className="row" data-aos="zoom-in">
+                <div className="row reveal-container" ref={revealRef}>
                     {[1, 2, 3, 4, 5, 6].map((num) => (
                         <div
                             key={num}

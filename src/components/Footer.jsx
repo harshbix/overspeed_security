@@ -41,8 +41,7 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Our Social Networks</h4>
                             <p>
-                                You can find us in several social media platforms as icons shown
-                                below.
+                                Connect with us across our social media platforms to stay updated on our latest security insights and company news.
                             </p>
                             <div className="social-links mt-3">
                                 <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>

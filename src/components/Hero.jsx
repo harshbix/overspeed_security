@@ -1,16 +1,16 @@
 import React from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Hero = () => {
+    const revealRef = useScrollReveal();
     return (
         <section id="hero" className="d-flex align-items-center">
-            <div className="container">
-                <div className="row">
+            <div className="container" ref={revealRef}>
+                <div className="row reveal-container">
                     <div
                         className="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
                     >
-                        <h1>The trusted sercurity service provider.</h1>
+                        <h1>The trusted security service provider.</h1>
                         <h2>
                             Excellence in Security, Grounded in Trust. Your Safety Is Our Top Priority.
                         </h2>
@@ -20,10 +20,10 @@ const Hero = () => {
                     </div>
                     <div
                         className="col-lg-6 order-1 order-lg-2 hero-img"
-                        data-aos="zoom-in"
-                        data-aos-delay="200"
                     >
-                        <img src="/assets/img/hero-img.png" className="img-fluid animated" alt="Hero" />
+                        <div style={{ aspectRatio: '1 / 1', width: '100%', maxWidth: '600px', margin: '0 auto' }}>
+                            <img src="/assets/img/hero-img.png" className="img-fluid animated" alt="Hero Illustration" fetchpriority="high" />
+                        </div>
                     </div>
                 </div>
             </div>

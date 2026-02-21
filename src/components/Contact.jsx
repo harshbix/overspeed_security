@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Contact = () => {
+    const revealRef = useScrollReveal();
     const [status, setStatus] = useState('');
 
     const handleSubmit = (e) => {
@@ -16,16 +18,15 @@ const Contact = () => {
 
     return (
         <section id="contact" className="contact">
-            <div className="container" data-aos="fade-up">
-                <div className="section-title">
+            <div className="container" ref={revealRef}>
+                <div className="section-title reveal-item">
                     <h2>Contact</h2>
                     <p>
-                        Get in touch with us for any inquiries and comments on our work
-                        we'll be happy to hear from you!
+                        Get in touch with us for inquiries, consultations, or feedback. We are always ready to address your security needs.
                     </p>
                 </div>
 
-                <div className="row">
+                <div className="row reveal-container">
                     <div className="col-lg-5 d-flex align-items-stretch">
                         <div className="info">
                             <div className="address">
@@ -70,6 +71,7 @@ const Contact = () => {
                                         className="form-control"
                                         id="name"
                                         required
+                                        aria-required="true"
                                     />
                                 </div>
                                 <div className="form-group col-md-6">
@@ -80,6 +82,7 @@ const Contact = () => {
                                         name="email"
                                         id="email"
                                         required
+                                        aria-required="true"
                                     />
                                 </div>
                             </div>
@@ -91,6 +94,7 @@ const Contact = () => {
                                     name="subject"
                                     id="subject"
                                     required
+                                    aria-required="true"
                                 />
                             </div>
                             <div className="form-group">
@@ -101,10 +105,11 @@ const Contact = () => {
                                     id="message"
                                     rows="10"
                                     required
+                                    aria-required="true"
                                 ></textarea>
                             </div>
-                            <div className="my-3">
-                                {status === 'loading' && <div className="loading" style={{ display: 'block' }}>Loading</div>}
+                            <div className="my-3" aria-live="polite">
+                                {status === 'loading' && <div className="loading" style={{ display: 'block' }}>Loading...</div>}
                                 {status === 'error' && <div className="error-message" style={{ display: 'block' }}>There was an error sending your message.</div>}
                                 {status === 'sent' && <div className="sent-message" style={{ display: 'block' }}>Your message has been sent. Thank you!</div>}
                             </div>
